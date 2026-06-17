@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Divisas</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="banderas-fondo">
+    <img src="img/mexico.png" alt="Bandera de México">
+    <img src="img/eu.png" alt="Bandera de Estados Unidos">
+    <img src="img/europa.png" alt="Bandera de Europa">
+</div>
+
+<main class="contenedor">
+
+    <section class="tarjeta">
+
+        <div class="icono">💰</div>
+
+        <h1>Conversor de Divisas</h1>
+
+        <label for="monto">Monto</label>
+        <input type="number" id="monto" placeholder="Ingresa una cantidad">
+
+        <div class="fila">
+
+            <div class="campo">
+                <label for="monedaOrigen">De</label>
+                <select id="monedaOrigen">
+                    <option value="USD">USD</option>
+                    <option value="MXN">MXN</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="monedaDestino">A</label>
+                <select id="monedaDestino">
+                    <option value="MXN">MXN</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+
+        </div>
+
+        <button id="btnConvertir">
+            Convertir
+        </button>
+
+        <div id="resultado" class="resultado"></div>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
